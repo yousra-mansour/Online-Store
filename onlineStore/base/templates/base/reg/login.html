@@ -1,0 +1,147 @@
+{% load static %}
+<head>
+
+
+	<!-- General meta information -->
+	<title>Login Form by Oussama Afellad</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<meta name="robots" content="index, follow" />
+	<meta charset="utf-8" />
+	<!-- // General meta information -->
+	
+	
+	<!-- Load Javascript -->
+	<script type="text/javascript" src='{% static "js/jquery.js" %}'></script>
+	<script type="text/javascript" src='{% static "js/jquery.query-2.1.7.js" %}'></script>
+	<script type="text/javascript" src='{% static "js/rainbows.js" %}'></script>
+	<!-- // Load Javascipt -->
+
+	<!-- Load stylesheets -->
+	<link type="text/css" rel="stylesheet" href='{% static "css/style.css" %}' media="screen" />
+	<!-- // Load stylesheets -->
+	
+<script>
+
+
+	$(document).ready(function(){
+ 
+	$("#submit1").hover(
+	function() {
+	$(this).animate({"opacity": "0"}, "slow");
+	},
+	function() {
+	$(this).animate({"opacity": "1"}, "slow");
+	});
+ 	});
+
+
+</script>
+	
+</head>
+<style>
+	body{
+		background:url('{% static "img/BG.jpg" %}') repeat;
+	}
+
+	#wrappertop {
+	background:url('{% static "img/wrapper_top.png" %}') no-repeat;
+	}
+
+	#wrappermiddle {
+	background:url('{% static "img/wrapper_middle.png" %}') repeat-y;
+	}
+
+	#wrapperbottom {
+	background:url('{% static "img/wrapper_bottom.png" %}') no-repeat;
+	}
+
+	#username_inputleft {
+	background:url('{% static "img/input_left.png" %}') no-repeat;
+	}
+
+	#username_inputmiddle {
+	background:url('{% static "img/input_middle.png" %}') repeat-x;
+	}
+
+	#username_inputright {
+	background:url('{% static "img/input_right.png" %}') no-repeat;
+	}
+
+	#password_inputleft {
+	background:url('{% static "img/input_left.png" %}') no-repeat;
+	}
+
+#password_inputmiddle {
+	background:url('{% static "img/input_middle.png" %}') repeat-x;
+
+}
+
+#password_inputright {
+	background:url('{% static "img/input_right.png" %}') no-repeat;
+}
+
+</style>
+<body>
+
+	<div id="wrapper">
+		<div id="wrappertop"></div>
+
+		<div id="wrappermiddle">
+
+			<h2>Login</h2>
+
+			<div id="username_input">
+
+				<div id="username_inputleft"></div>
+
+				<div id="username_inputmiddle">
+				<form>
+					<input type="text" name="link" id="url" value="E-mail Address" onclick="this.value = ''">
+					<img id="url_user" src='{% static "img/mailicon.png" %}' alt="">
+				</form>
+				</div>
+
+				<div id="username_inputright"></div>
+
+			</div>
+
+			<div id="password_input">
+
+				<div id="password_inputleft"></div>
+
+				<div id="password_inputmiddle">
+				<form>
+					<input type="password" name="link" id="url" value="Password" onclick="this.value = ''">
+					<img id="url_password" src='{% static "img/passicon.png" %}' alt="">
+				</form>
+				</div>
+
+				<div id="password_inputright"></div>
+
+			</div>
+
+			<div id="submit">
+				<form>
+				<input type="image" src='{% static "img/submit_hover.png"  %}' id="submit1" value="Sign In">
+				<input type="image" src='{% static "img/submit.png" %}' id="submit2" value="Sign In">
+				</form>
+			</div>
+
+
+			<div id="links_left">
+
+			<a href="#">Forgot your Password?</a>
+
+			</div>
+
+			<div id="links_right"><a href="#">Not a Member Yet?</a></div>
+
+		</div>
+
+		<div id="wrapperbottom"></div>
+
+	</div>
+
+</body>
+</html>
